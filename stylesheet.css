@@ -3,12 +3,27 @@
     --blur-value: 5px;
     --padding: 1rem;
 }
+
 body{
     width: 80%;
     margin:auto;
     background-repeat: no-repeat;
     background-size: cover;
     background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgx0nedirMiTBTOospkkpInxytm51TFEGq0Q&usqp=CAU");
+}
+input[type="range"]::-webkit-slider-runnable-track{
+    background: #110425;
+    border-radius: 8px;
+    height: 5px;
+    margin-top: -15px;
+}
+input[type="range"]::-webkit-slider-thumb{
+    background:white;
+    height: 10px;
+    width: 20px;
+    border-radius: 50%;
+    margin-top: -6px;
+    box-shadow: 0 0 4px 0 rgba(0,0,0, 1);
 }
 header{
     text-align: center;
