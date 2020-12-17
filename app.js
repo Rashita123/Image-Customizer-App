@@ -22,3 +22,6 @@ function ColorManager(){
 blurSelector.addEventListener("change",blurManager)
 marginSelector.addEventListener("change",MarginManager)
 colorSelector.addEventListener("change",ColorManager)
+blurSelector.addEventListener("mousemove",blurManager)
+marginSelector.addEventListener("mousemove",MarginManager)
+colorSelector.addEventListener("mousemove",ColorManager)
