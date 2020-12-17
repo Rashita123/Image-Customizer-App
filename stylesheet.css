@@ -1,0 +1,57 @@
+:root{
+    --bg-color: red;
+    --blur-value: 5px;
+    --padding: 1rem;
+}
+body{
+    width: 80%;
+    margin: 3rem auto;
+}
+header{
+    text-align: center;
+}
+
+.image-div{
+    text-align: center;
+    background-color: var(--bg-color);
+    padding: var(--padding);
+    width: 30rem;
+    margin: 2rem auto;
+    border-radius: 16px;
+}
+
+
+img{
+    width: 30rem;
+    filter: blur(var(--blur-value));
+    border-radius: 16px;
+}
+
+h3{
+    font-size: 2rem;
+}
+
+.JS-color{
+    color: var(--bg-color);
+    font-size: 50px;
+}
+.sliders{
+    width: 80%;
+    margin: auto;
+    text-align: center
+}
+.margin-customizers,.blur-customizers, .color-customizers{
+    display: inline-block;
+    margin: 0rem 1rem;
+}
+
+.margin-customizers h3,.margin-slider{
+    display: inline-block;
+}
+
+.blur-customizers h3,.blur-slider{
+    display: inline-block;
+}
+.color-customizers h3,.color-slider{
+    display: inline-block;
+}

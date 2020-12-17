@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blur App</title>
+    <link href="stylesheet.css" rel="stylesheet"></link>
+</head>
+<body>
+    <header>
+        <h1>Image Customization with <span class="JS-color">JS</span></h1>
+    </header>
+    <hr>
+    <div class="sliders">
+        <div class="margin-customizers">
+            <h3>Margin</h3>
+            <div class="margin-slider">
+                <input type="range" min="0" max="5" value="1" class="margin-selector">
+            </div>
+        </div>
+        <div class="blur-customizers">
+            <h3>Blur</h3>
+            <div class="blur-slider">
+                <input type="range" min="0" max="10" value="5" class="blur-selector">
+            </div>
+        </div>
+
+        <div class="color-customizers">
+            <h3>Color</h3>
+            <div class="color-slider">
+                <input type="color" value="#FF0000" class="color-selector">
+            </div>
+        </div>
+
+    </div>
+    <div class="image-div">
+        <div class="image-wrap">
+            <img src="images/pxfuel.com.jpg" class="image"></img>
+        </div>
+    </div>
+
+    <script src="app.js" type="text/javascript"></script>
+</body>
+</html>
