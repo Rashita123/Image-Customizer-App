@@ -21,7 +21,7 @@
         <div class="blur-customizers">
             <h3>Blur</h3>
             <div class="blur-slider">
-                <input type="range" min="0" max="10" value="5" class="blur-selector">
+                <input type="range" min="0" max="10" value="2" class="blur-selector">
             </div>
         </div>
 
@@ -35,7 +35,12 @@
     </div>
     <div class="image-div">
         <div class="image-wrap">
-            <img src="images/pxfuel.com.jpg" class="image"></img>
+            <p><input type="file" accept="image/*" name="image" id="file" onchange="loadFile(event)" style="display: none;"></p>
+            <p><label for="file" id="uploadFile">Upload Image</label></p>
+            <p><img id="output" width="200" src="images/pxfuel.com.jpg"/></p>
+            <button id="uploadFile">
+                <a href="#" onclick="this.href = document.getElementById('output').src;" style="text-decoration: none; color: white;" download>Click here to download image</a>
+            </button>
         </div>
     </div>
 

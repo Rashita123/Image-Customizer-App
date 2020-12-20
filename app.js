@@ -25,3 +25,9 @@ colorSelector.addEventListener("change",ColorManager)
 blurSelector.addEventListener("mousemove",blurManager)
 marginSelector.addEventListener("mousemove",MarginManager)
 colorSelector.addEventListener("mousemove",ColorManager)
+
+
+var loadFile = function(event) {
+	var image = document.getElementById('output');
+	image.src = URL.createObjectURL(event.target.files[0]);
+};
